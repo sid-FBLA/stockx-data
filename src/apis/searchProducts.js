@@ -1,4 +1,6 @@
-const algoliasearch = require("algoliasearch");
+const algoliasearch = require(["algoliasearch"], function(algoliasearch) {
+  
+});
 
 const stockxClient = algoliasearch(
   "XW7SBCT9V6",

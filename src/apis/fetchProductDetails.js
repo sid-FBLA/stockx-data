@@ -1,4 +1,6 @@
-const axios = require("axios");
+const axios = require(["axios"], function(axios) {
+  
+});
 module.exports = async (product) => {
   if (typeof product === "object" && product !== null) {
     product = product.searchKey;

@@ -1,4 +1,6 @@
-const axios = require("axios");
+const axios = require(["axios"], function(axios) {
+
+});
 module.exports = async () => {
   const res = await axios.get(`https://www.stockx.com/`, {
     headers: {

@@ -1,6 +1,12 @@
-const searchProducts = require("./apis/searchProducts");
-const fetchProductDetails = require("./apis/fetchProductDetails");
-const fetchApiKey = require("./apis/fetchApiKey");
+const searchProducts = require(["./apis/searchProducts"], function(search) {
+
+});
+const fetchProductDetails = require(["./apis/fetchProductDetails"], function(fetchProductDetails) {
+
+});
+const fetchApiKey = require(["./apis/fetchApiKey"], function (fetchKey){
+  
+});
 
 module.exports = class StockXScraper {
   async searchProducts(query) {
